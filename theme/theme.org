@@ -1,0 +1,97 @@
+#+HTML_HEAD: <style>
+#+HTML_HEAD:   @font-face {
+#+HTML_HEAD:     font-family: 'Ioskeley Mono';
+#+HTML_HEAD:     src: url('fonts/IoskeleyMono-Regular.woff2') format('truetype');
+#+HTML_HEAD:     font-weight: 400;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   :root {
+#+HTML_HEAD:     --bg: #1e1e1e;
+#+HTML_HEAD:     --fg: #d4d4d4;
+#+HTML_HEAD:     --muted: #808080;
+#+HTML_HEAD:     --accent: #9cdcfe;
+#+HTML_HEAD:     --code-bg: #2d2d2d;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   * {
+#+HTML_HEAD:     box-sizing: border-box;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   body {
+#+HTML_HEAD:     background: var(--bg);
+#+HTML_HEAD:     color: var(--fg);
+#+HTML_HEAD:     font-family: Ioskeley Mono;
+#+HTML_HEAD:     font-size: 14px;
+#+HTML_HEAD:     line-height: 1.7;
+#+HTML_HEAD:     max-width: 900px;
+#+HTML_HEAD:     margin: 0 auto;
+#+HTML_HEAD:     padding: 60px 30px;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   h1, h2, h3, h4 {
+#+HTML_HEAD:     font-weight: 700;
+#+HTML_HEAD:     line-height: 1.3;
+#+HTML_HEAD:     color: #ffffff;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   h1 {
+#+HTML_HEAD:     font-size: 2em;
+#+HTML_HEAD:     margin-bottom: 0.8em;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   h2 {
+#+HTML_HEAD:     font-size: 1.35em;
+#+HTML_HEAD:     margin-top: 2em;
+#+HTML_HEAD:     border-bottom: 1px solid #333;
+#+HTML_HEAD:     padding-bottom: 0.3em;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   h3 {
+#+HTML_HEAD:     font-size: 1.1em;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   a {
+#+HTML_HEAD:     color: var(--accent);
+#+HTML_HEAD:     text-decoration: none;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   a:hover {
+#+HTML_HEAD:     text-decoration: underline;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   code,
+#+HTML_HEAD:   pre {
+#+HTML_HEAD:     font-family: 'Ioskeley Mono', monospace;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   code {
+#+HTML_HEAD:     background: var(--code-bg);
+#+HTML_HEAD:     padding: 2px 5px;
+#+HTML_HEAD:     border-radius: 3px;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   pre {
+#+HTML_HEAD:     background: var(--code-bg);
+#+HTML_HEAD:     padding: 1em;
+#+HTML_HEAD:     overflow-x: auto;
+#+HTML_HEAD:     border-radius: 4px;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   blockquote {
+#+HTML_HEAD:     border-left: 2px solid #555;
+#+HTML_HEAD:     margin-left: 0;
+#+HTML_HEAD:     padding-left: 1em;
+#+HTML_HEAD:     color: var(--muted);
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   hr {
+#+HTML_HEAD:     border: 0;
+#+HTML_HEAD:     border-top: 1px solid #333;
+#+HTML_HEAD:     margin: 2em 0;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   ::selection {
+#+HTML_HEAD:     background: #264f78;
+#+HTML_HEAD:   }
+#+HTML_HEAD: </style>
+

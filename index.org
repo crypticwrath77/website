@@ -1,0 +1,12 @@
+#+title: Hello there !!
+#+SETUPFILE: theme/theme.org
+#+OPTIONS: toc:nil num:nil
+* who am i?
+- helo my name is dhipak also goes by crypticwrath77 (ik ts is cringe but we coolin)
+
+* what do i do?
+- i do a shit ton of stuff, constantly have a lot of ideas which could be used for something
+
+* why am i making this website at 2:16am?
+- to store those shit ton of ideas
+- also might be cool to save them as memories maybe
