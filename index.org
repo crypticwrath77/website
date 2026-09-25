@@ -1,6 +1,15 @@
 #+title: Hello there !!
 #+SETUPFILE: theme/theme.org
 #+OPTIONS: toc:nil num:nil
+
+#+HTML: <aside class="sidebar">
+#+HTML: <div class="sidebar-title"></div>
+#+HTML: <nav>
+#+HTML: <a href="about.html">about</a>
+#+HTML: <a href="blog.html">blog</a>
+#+HTML: </nav>
+#+HTML: </aside>
+
 * who am i?
 - helo my name is dhipak also goes by crypticwrath77 (ik ts is cringe but we coolin)
 
@@ -9,5 +18,3 @@
 
 * why am i making this website at 2:16am?
 - to store those ton of ideas
-- also might be cool to save them as memories maybe
-- try to learn on the way of building this website.

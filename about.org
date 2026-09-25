@@ -1,0 +1,22 @@
+#+title: About
+#+SETUPFILE: theme/theme.org
+#+OPTIONS: toc:nil num:nil
+
+#+HTML: <aside class="sidebar">
+#+HTML: <div class="sidebar-title"></div>
+#+HTML: <nav>
+#+HTML: <a href="index.html">home</a>
+#+HTML: <a href="about.html">about</a>
+#+HTML: <a href="blog.html">blog</a>
+#+HTML: </nav>
+#+HTML: </aside>
+
+Hello there, My name is Dhipak Kumar. Currently doing my 3rd year undergrad at IITM.
+
+My interests include writing code for embedded micro-controllers, solving CTFs for fun and I like to also tinker with computer hardware. Dual booted a lot of distros during peak covid. Now i use Arch with doom emacs btw. I use plain i3wm. No hyprland slop Tried it once Didnt really like it.
+
+Everyone says i do i bit of everything. which i think is cool but now im coming to the realization that it really isnt. i should prolly start sticking with something which interests me and work on that only. but trying to find that is almost taking me 3 years. :(
+
+i really dont like the idea of having my phone number visible to everyone present in a grp. so i prefer mail than call. but obv this is not the 2000s :(
+
+Wanna talk like its the 2000s? mail me [[mailto:dhipakrs07@gmail.com][here]]

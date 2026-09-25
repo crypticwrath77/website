@@ -1,9 +1,19 @@
 #+HTML_HEAD: <style>
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      FONT
+#+HTML_HEAD:      ======================================== */
+#+HTML_HEAD:
 #+HTML_HEAD:   @font-face {
 #+HTML_HEAD:     font-family: 'Ioskeley Mono';
-#+HTML_HEAD:     src: url('fonts/IoskeleyMono-Regular.woff2') format('truetype');
+#+HTML_HEAD:     src: url('fonts/IoskeleyMono-Regular.woff2') format('woff2');
 #+HTML_HEAD:     font-weight: 400;
 #+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      VARIABLES
+#+HTML_HEAD:      ======================================== */
 #+HTML_HEAD:
 #+HTML_HEAD:   :root {
 #+HTML_HEAD:     --bg: #1e1e1e;
@@ -11,7 +21,14 @@
 #+HTML_HEAD:     --muted: #808080;
 #+HTML_HEAD:     --accent: #9cdcfe;
 #+HTML_HEAD:     --code-bg: #2d2d2d;
+#+HTML_HEAD:     --border: #333333;
+#+HTML_HEAD:     --sidebar-width: 220px;
 #+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      GLOBAL
+#+HTML_HEAD:      ======================================== */
 #+HTML_HEAD:
 #+HTML_HEAD:   * {
 #+HTML_HEAD:     box-sizing: border-box;
@@ -20,13 +37,77 @@
 #+HTML_HEAD:   body {
 #+HTML_HEAD:     background: var(--bg);
 #+HTML_HEAD:     color: var(--fg);
-#+HTML_HEAD:     font-family: Ioskeley Mono;
+#+HTML_HEAD:     font-family: 'Ioskeley Mono', monospace;
 #+HTML_HEAD:     font-size: 14px;
 #+HTML_HEAD:     line-height: 1.7;
-#+HTML_HEAD:     max-width: 900px;
-#+HTML_HEAD:     margin: 0 auto;
-#+HTML_HEAD:     padding: 60px 30px;
+#+HTML_HEAD:     margin: 0;
+#+HTML_HEAD:     padding: 0;
 #+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      MAIN CONTENT
+#+HTML_HEAD:      ======================================== */
+#+HTML_HEAD:
+#+HTML_HEAD:   #content {
+#+HTML_HEAD:     max-width: 900px;
+#+HTML_HEAD:     margin-left: calc(var(--sidebar-width) + 60px);
+#+HTML_HEAD:     padding: 60px 40px;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:   #postamble {
+#+HTML_HEAD:     margin-left: calc(var(--sidebar-width) + 60px);
+#+HTML_HEAD:     padding: 0 40px 40px;
+#+HTML_HEAD:     max-width: 900px;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      SIDEBAR
+#+HTML_HEAD:      ======================================== */
+#+HTML_HEAD:
+#+HTML_HEAD:   .sidebar {
+#+HTML_HEAD:     position: fixed;
+#+HTML_HEAD:     left: 0;
+#+HTML_HEAD:     top: 0;
+#+HTML_HEAD:     width: var(--sidebar-width);
+#+HTML_HEAD:     height: 100vh;
+#+HTML_HEAD:     padding: 60px 30px;
+#+HTML_HEAD:     border-right: 1px solid var(--border);
+#+HTML_HEAD:     background: var(--bg);
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   .sidebar-title {
+#+HTML_HEAD:     color: #ffffff;
+#+HTML_HEAD:     font-weight: 700;
+#+HTML_HEAD:     margin-bottom: 30px;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   .sidebar nav {
+#+HTML_HEAD:     display: flex;
+#+HTML_HEAD:     flex-direction: column;
+#+HTML_HEAD:     gap: 10px;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   .sidebar a {
+#+HTML_HEAD:     color: var(--muted);
+#+HTML_HEAD:     font-weight: 700;
+#+HTML_HEAD:     text-decoration: none;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   .sidebar a:hover {
+#+HTML_HEAD:     color: var(--fg);
+#+HTML_HEAD:     text-decoration: none;
+#+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      HEADINGS
+#+HTML_HEAD:      ======================================== */
 #+HTML_HEAD:
 #+HTML_HEAD:   h1, h2, h3, h4 {
 #+HTML_HEAD:     font-weight: 700;
@@ -42,7 +123,7 @@
 #+HTML_HEAD:   h2 {
 #+HTML_HEAD:     font-size: 1.35em;
 #+HTML_HEAD:     margin-top: 2em;
-#+HTML_HEAD:     border-bottom: 1px solid #333;
+#+HTML_HEAD:     border-bottom: 1px solid var(--border);
 #+HTML_HEAD:     padding-bottom: 0.3em;
 #+HTML_HEAD:   }
 #+HTML_HEAD:
@@ -50,14 +131,25 @@
 #+HTML_HEAD:     font-size: 1.1em;
 #+HTML_HEAD:   }
 #+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      LINKS
+#+HTML_HEAD:      ======================================== */
+#+HTML_HEAD:
 #+HTML_HEAD:   a {
 #+HTML_HEAD:     color: var(--accent);
+#+HTML_HEAD:     font-weight: 700;
 #+HTML_HEAD:     text-decoration: none;
 #+HTML_HEAD:   }
 #+HTML_HEAD:
 #+HTML_HEAD:   a:hover {
 #+HTML_HEAD:     text-decoration: underline;
 #+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      CODE
+#+HTML_HEAD:      ======================================== */
 #+HTML_HEAD:
 #+HTML_HEAD:   code,
 #+HTML_HEAD:   pre {
@@ -77,6 +169,11 @@
 #+HTML_HEAD:     border-radius: 4px;
 #+HTML_HEAD:   }
 #+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      BLOCKQUOTES
+#+HTML_HEAD:      ======================================== */
+#+HTML_HEAD:
 #+HTML_HEAD:   blockquote {
 #+HTML_HEAD:     border-left: 2px solid #555;
 #+HTML_HEAD:     margin-left: 0;
@@ -84,14 +181,53 @@
 #+HTML_HEAD:     color: var(--muted);
 #+HTML_HEAD:   }
 #+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      HORIZONTAL RULE
+#+HTML_HEAD:      ======================================== */
+#+HTML_HEAD:
 #+HTML_HEAD:   hr {
 #+HTML_HEAD:     border: 0;
-#+HTML_HEAD:     border-top: 1px solid #333;
+#+HTML_HEAD:     border-top: 1px solid var(--border);
 #+HTML_HEAD:     margin: 2em 0;
 #+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      TEXT SELECTION
+#+HTML_HEAD:      ======================================== */
 #+HTML_HEAD:
 #+HTML_HEAD:   ::selection {
 #+HTML_HEAD:     background: #264f78;
 #+HTML_HEAD:   }
+#+HTML_HEAD:
+#+HTML_HEAD:
+#+HTML_HEAD:   /* ========================================
+#+HTML_HEAD:      MOBILE
+#+HTML_HEAD:      ======================================== */
+#+HTML_HEAD:
+#+HTML_HEAD:   @media (max-width: 700px) {
+#+HTML_HEAD:
+#+HTML_HEAD:     .sidebar {
+#+HTML_HEAD:       position: static;
+#+HTML_HEAD:       width: 100%;
+#+HTML_HEAD:       height: auto;
+#+HTML_HEAD:       padding: 20px;
+#+HTML_HEAD:       border-right: none;
+#+HTML_HEAD:       border-bottom: 1px solid var(--border);
+#+HTML_HEAD:     }
+#+HTML_HEAD:
+#+HTML_HEAD:     .sidebar nav {
+#+HTML_HEAD:       flex-direction: row;
+#+HTML_HEAD:       flex-wrap: wrap;
+#+HTML_HEAD:     }
+#+HTML_HEAD:
+#+HTML_HEAD:     #content {
+#+HTML_HEAD:       margin-left: 0;
+#+HTML_HEAD:       padding: 30px 20px;
+#+HTML_HEAD:     }
+#+HTML_HEAD:
+#+HTML_HEAD:   }
+#+HTML_HEAD:
 #+HTML_HEAD: </style>
-
+#+HTML_HEAD: <script src="nyan-bg.js" defer></script>

@@ -1,0 +1,13 @@
+#+title: Blog
+#+SETUPFILE: theme/theme.org
+#+OPTIONS: toc:nil num:nil
+
+#+HTML: <aside class="sidebar">
+#+HTML: <div class="sidebar-title"></div>
+#+HTML: <nav>
+#+HTML: <a href="index.html">home</a>
+#+HTML: <a href="about.html">about</a>
+#+HTML: </nav>
+#+HTML: </aside>
+
+[[file:./blogs/temp.org][Temp]]
