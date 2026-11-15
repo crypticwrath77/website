@@ -11,3 +11,7 @@
 #+HTML: </aside>
 
 [[file:./blogs/monster.org][Is monster any good?]]
+
+[[file:./blogs/rant.org][Placement or a scam? dont mind me im high on redbull]]
+
+[[file:./blogs/gro.org][GRO implementation]]
