@@ -10,4 +10,4 @@
 #+HTML: </nav>
 #+HTML: </aside>
 
-[[file:./blogs/temp.org][Temp]]
+[[file:./blogs/monster.org][Is monster any good?]]
